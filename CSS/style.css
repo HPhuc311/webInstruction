@@ -454,8 +454,19 @@ footer{
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
+
 }
 
+
+.footer__link a{
+    color: #8b8b96;
+    transition: all .5s;
+}
+
+
+.footer__link a:hover{
+    color: white;
+}
 
 
 .footer__top i{
@@ -485,6 +496,18 @@ footer{
     margin-right: 1rem;
 }
 
+.footer__contact a{
+    color: #8b8b96;
+    transition: all .5s;
+}
+
+.footer__contact a:hover{
+    color: white;
+}
+
+
+
+
 .footer__form{
     margin-top: 3rem;
 }
@@ -503,7 +526,14 @@ footer{
     border-radius: 0;
     color: white;
     outline: none;
+    transition: all .5s;
 }
+
+.footer__form button:hover{
+    background-color: #ec1955;
+    color: white   ;
+}
+
 
 .footer__form input {
     padding: 14px;
@@ -517,6 +547,8 @@ footer{
 .footer__bottom{
     background-color: black;
     text-align: center;
+    letter-spacing: 1px;
+    padding: 1rem 0;
 }
 
 .footer__bottom a{
@@ -526,5 +558,14 @@ footer{
 
 .footer__bottom .bottom__color{
     color: white;
-    padding: 1rem 0;
+}
+
+
+.footer__bottom a{
+    color: #ff4f81;
+    transition: all .5s;
+}
+
+.footer__bottom a:hover{
+    color: white;
 }
