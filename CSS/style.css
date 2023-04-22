@@ -569,3 +569,22 @@ footer{
 .footer__bottom a:hover{
     color: white;
 }
+
+/* RESPONSIVE */
+/* HEADER */
+@media screen and (max-width: 575.98px){
+    .header__topleft a{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__topright{
+        width: 35%;
+        text-align: center;
+    }
+
+    .header__topright a{
+        margin-bottom: 5px;
+    }
+}
