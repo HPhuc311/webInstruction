@@ -149,6 +149,17 @@ html , body{
     color: #ff4f81;
 }
 
+.navInstruction .navbar-toggler{
+    color: #ff4f81;
+    background-color: black;
+    border-radius: 0;
+}
+
+.navInstruction .navbar-toggler:focus{
+    outline: none;
+}
+
+
 
 /* CAROUSEL */
 
@@ -165,7 +176,7 @@ html , body{
 
 #carouselInstruction .carousel-caption p{
     letter-spacing: 4px;
-    line-height: 1.8rem;
+    line-height: 1.8em;
     font-weight: 300;
     margin: 0 auto;
     width: 70%;
@@ -572,13 +583,60 @@ footer{
 
 /* RESPONSIVE */
 /* HEADER */
+/* sử dụng max cần xếp theo thứ tự lớn trước nhỏ sau */
+
+@media screen and (max-width:1199.98px){
+    #carouselInstruction .carousel-caption{
+        top: 50%;
+    }
+    #carouselInstruction .carousel-caption h1{
+        font-size: 4vw;
+    }
+    #carouselInstruction .carousel-caption p{
+        font-size: 1.6vw;
+        margin-bottom: 0.5em;
+    }
+    #carouselInstruction .carousel-caption button {
+        font-size: 1.5vw;
+        padding: 0.8em 1em;
+    }
+}
+
+
+
+@media screen and (max-width: 991.98px){
+    .navInstruction .navbar-brand p:first-child{
+        font-size: 3vw;
+    }
+    .navInstruction .navbar-brand p:last-child{
+        font-size: 1.5vw;
+    }
+}
+
+
+@media screen and (max-width: 767.98px){
+    #navbarInstruction .navbar-nav{
+        background-color: #eee;
+        text-align: center;
+    }
+
+    #navbarInstruction .dropdown-menu{
+        background-color: #e0e1e2 ;
+        border-color: #e0e1e2 ;
+        text-align: center;
+    }
+    #navbarInstruction .dropdown-item{
+        color: black;
+    }
+}
+
 @media screen and (max-width: 575.98px){
     .header__topleft a{
         display: block;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px){
     .header__topright{
         width: 35%;
         text-align: center;
@@ -588,3 +646,20 @@ footer{
         margin-bottom: 5px;
     }
 }
+
+/* sử dụng min và max không cần xếp theo thứ tự */
+@media screen and (min-width:768px) and (max-width:992px){
+    #navbarInstruction .navbar-nav li{
+        margin: 0;
+        padding: 0 2px;
+    }
+    #navbarInstruction .navbar-nav .nav-item .nav-link{
+        font-size: 12px ;
+        padding: 5px;
+    }
+}
+
+
+
+
+
