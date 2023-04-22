@@ -198,6 +198,9 @@ html , body{
     border-color: #ff4f81;
 }
 
+#carouselInstruction .carousel-control-prev, #carouselInstruction .carousel-control-next{
+    z-index: 11;
+}
 /* WELCOME */
 .welcome__content>p{
     width: 80%;
@@ -602,8 +605,6 @@ footer{
     }
 }
 
-
-
 @media screen and (max-width: 991.98px){
     .navInstruction .navbar-brand p:first-child{
         font-size: 3vw;
@@ -612,7 +613,6 @@ footer{
         font-size: 1.5vw;
     }
 }
-
 
 @media screen and (max-width: 767.98px){
     #navbarInstruction .navbar-nav{
@@ -635,7 +635,17 @@ footer{
         display: block;
     }
 }
-
+@media screen and (max-width: 415px){
+    #carouselInstruction{
+        height: 250px;
+    }
+    #carouselInstruction .carousel-inner, #carouselInstruction .carousel-item, #carouselInstruction .carousel-item img{
+        height: 100%;
+    } 
+    #carouselInstruction .carousel-item img{
+        object-fit: cover;
+    }
+}
 @media screen and (max-width: 320px){
     .header__topright{
         width: 35%;
