@@ -628,6 +628,8 @@ footer{
     #navbarInstruction .dropdown-item{
         color: black;
     }
+
+    
 }
 
 @media screen and (max-width: 575.98px){
@@ -656,6 +658,8 @@ footer{
         margin-bottom: 5px;
     }
 }
+
+
 
 /* sử dụng min và max không cần xếp theo thứ tự */
 @media screen and (min-width:768px) and (max-width:992px){
