@@ -280,6 +280,7 @@ html , body{
 /* OFFER */
 .offer--col{
     padding: 15px;
+    height: 100%;
 }
 
 
@@ -629,7 +630,7 @@ footer{
         color: black;
     }
 
-    
+
 }
 
 @media screen and (max-width: 575.98px){
@@ -646,6 +647,11 @@ footer{
     } 
     #carouselInstruction .carousel-item img{
         object-fit: cover;
+    }
+}
+@media screen and (max-width:376px){
+    .feedback__bottom{
+        width: 100%;
     }
 }
 @media screen and (max-width: 320px){
@@ -673,7 +679,11 @@ footer{
     }
 }
 
-
+@media screen and (min-width:575px) and (max-width:992px){
+    .feedback__bottom{
+        width: 85%;
+    }
+}
 
 
 
